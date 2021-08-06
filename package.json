@@ -1,0 +1,23 @@
+{
+  "name": "xbftw-bot",
+  "version": "1.0.0",
+  "description": "Bot made my XBFTW",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "XBFTW",
+  "license": "ISC",
+  "dependencies": {
+    "@discordjs/opus": "^0.5.3",
+    "discord.js": "^12.5.3",
+    "dotenv": "^10.0.0",
+    "ffmpeg-static": "^4.4.0",
+    "fs": "0.0.1-security",
+    "nodemon": "^2.0.12",
+    "yt-search": "^2.10.0",
+    "ytdl-core": "^4.9.0"
+  },
+  "devDependencies": {},
+  "keywords": []
+}
