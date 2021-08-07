@@ -2,9 +2,9 @@
 
 This bot was made by XBFTW#7381, if you have any questions or concerns about the functionality or have any ideas to add to the bot, feel free to contact me. 
 
-## Required Files
+## Steps/Required files
 
-You need to download [Node.js](https://nodejs.org/en/). Go into cmd/terminal and do the command ```npm install```. This should update and install all required files from the ```package.json``` file. To start up the bot use the command ```npm app.js```  . 
+You need to download [Node.js](https://nodejs.org/en/). Go into cmd/terminal and do the command ```npm install```. This should update and install all required files from the ```package.json``` file. To start up the bot use the command ```npm app.js```  . If you need more help on the setup, contact XBFTW#7381 on Discord. 
 
 
 ## Usage
