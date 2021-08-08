@@ -8,7 +8,7 @@ You need to download [Node.js](https://nodejs.org/en/). Go into cmd/terminal and
 
 
 ## Usage
-Create a file called ```.env``` and type the following text (make sure to type your TOKEN, it can be found in your discordapi application, bot, token.)
+Create a file called ```.env``` and type your bot token. Can be found [here](https://imgur.com/a/oaUFJSj).
 
 ```java
 BOT_TOKEN=your.token.here
