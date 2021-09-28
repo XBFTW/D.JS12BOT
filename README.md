@@ -15,4 +15,4 @@ BOT_TOKEN=your.token.here
 ```
 
 ### Work
-This bot is for the [XBFTW SERVER](https://discord.gg/2kn45fF6VK), but it is open to use if you contact XBFTW. 
+This bot is for the [XBFTW SERVER](https://discord.gg/2kn45fF6VK), but it is open to use if you contact XBFTW. You can also find find my socials by clicking [This](https://xbftw.com)
