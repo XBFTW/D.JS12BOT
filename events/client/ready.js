@@ -1,5 +1,8 @@
 module.exports = () =>{
-    console.log(`XBFTW is now ONLINE!`);
+    
+    const config = require(`../../config.json`);
+    const Name = config.clientname;
+    console.log(Name,"is now online.")
 
 }
 
