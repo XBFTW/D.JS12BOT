@@ -1,4 +1,5 @@
 const Discord = require('discord.js');
+const config = require(`./config.json`);
 require('dotenv').config();
 const client = new Discord.Client();
 
@@ -32,7 +33,7 @@ const server = http.createServer((req, res) => {
   fs.createReadStream('index.html').pipe(res)
 })
 
-server.listen(process.env.PORT || 3000)
+server.listen(process.env.PORT)
 
 //Login Info that requires a enviornment variable (.env)
 client.login(process.env.BOT_TOKEN);
