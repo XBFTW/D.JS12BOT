@@ -1,6 +1,6 @@
 # Description
 
-This bot was made by XBFTW#7381, if you have any questions or concerns about the functionality or have any ideas to add to the bot, feel free to contact me. 
+This bot was made by ```XBFTW#7381``` on Discord, if you have any questions or concerns about the functionality or have any ideas to add to the bot, feel free to contact me. 
 
 ## Steps/Required files
 
