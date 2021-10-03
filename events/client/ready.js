@@ -1,9 +1,11 @@
 module.exports = () =>{
     
     const config = require(`../../config.json`);
-    const Name = config.clientname;
-    console.log(Name,"is now online.")
+    require('dotenv').config();
+
+    console.log(`${config.botname}`,"is now online.")
+    console.log('The website is now online on port:', `${process.env.PORT}`)
 
 }
 
-//Just tells the console that the bot is Online
+//Just tells the console that the bot is online and what port the website is running on .
