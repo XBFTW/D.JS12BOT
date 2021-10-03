@@ -33,7 +33,7 @@ const server = http.createServer((req, res) => {
   fs.createReadStream('index.html').pipe(res)
 })
 
-server.listen(process.env.PORT)
+server.listen(process.env.PORT || 3000)
 
 //Login Info that requires a enviornment variable (.env)
 client.login(process.env.BOT_TOKEN);
