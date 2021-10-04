@@ -6,16 +6,18 @@ module.exports = {
 //This is where I test my crash prevention
 
 function catchErr (err, message) {
-    client.users.cache.get('415687999641354250').send('The bot crashed, the crash report: ```' + err + '```')
+
+    require('dotenv').config();
+
+    client.users.cache.get(`${process.env.OWNER}`).send('The bot crashed, the crash report: ```' + err + '```')
     console.log("The bot has just prevented a crash, the report has been sent to XBFTW")
     message.channel.send('The bot just prevented a crash, the report has been sent to XBFTW');
+
   }
 
   try{
 
 //Put code here
-
-
 thisIsntDefined
 
   }
@@ -28,4 +30,3 @@ thisIsntDefined
     }
 
 }
-
