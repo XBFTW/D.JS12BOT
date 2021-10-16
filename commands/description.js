@@ -20,7 +20,7 @@ module.exports = {
         .setDescription('This bot was made by XBFTW#7381, if you have any questions or concerns about the functionality or have any ideas to add to the bot, feel free to contact me.')
         .addFields(
             {name: 'Check out my website:', value: 'https://xbftw.com'},
-            {name: 'Click the Github link ahaid to see the code that runs this bot:', value: 'https://github.com/xbftw/XBFTW-BOT/'}
+            {name: 'Click the Github link ahead to see the code that runs this bot:', value: 'https://github.com/xbftw/XBFTW-BOT/'}
 
             )
         .setImage('https://i.imgur.com/kbUYO6k.png')
