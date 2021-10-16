@@ -27,10 +27,11 @@ client.on('guildMemberAdd', member => {
 //http
 const http = require('http')
 const fs = require('fs')
+const websiteLocation = (`./website/index.html`)
 
 const server = http.createServer((req, res) => {
   res.writeHead(200, { 'content-type': 'text/html' })
-  fs.createReadStream('index.html').pipe(res)
+  fs.createReadStream(websiteLocation).pipe(res)
 })
 
 server.listen(process.env.PORT || 3000)
