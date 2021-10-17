@@ -1,11 +1,47 @@
 module.exports = () =>{
     
-    const config = require(`../../config.json`);
-    require('dotenv').config();
+const client = require('discord.js')
+const config = require(`../../config.json`);
+require('dotenv').config();
 
-    console.log(`${config.botname}`,"is now online.")
-    console.log('The website is now online on port:', `${process.env.PORT}`)
+//Tells console that the bot is online
+console.log(`${config.botname}`,"is now online.")
+//Checks the status of the website and tells the console if the website is online
+const websiteStatus = config.websiteStatus
 
+if(websiteStatus === "on"){
+
+const http = require('http');
+const https = require('https');
+
+test();
+
+function checkWebsite(url, callback) {
+  https
+  http
+    .get(url, function(res) {
+      console.log(url, res.statusCode);
+      return callback(res.statusCode === 200);
+    })
+    .on("error", function(e) {
+      return callback(false);
+    });
 }
 
-//Just tells the console that the bot is online and what port the website is running on .
+function test(){
+    checkWebsite(`http://localhost/:${process.env.PORT}`, function(check){
+        
+    if(check){
+    //console.log(check); //true
+    console.log('The website is now online on port:', `${process.env.PORT}`)
+    }else{
+      console.log('The website may not be online!')
+    }
+  })
+}
+
+}else{
+  return;
+}
+
+}
