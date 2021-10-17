@@ -7,6 +7,10 @@ require('dotenv').config();
 //Tells console that the bot is online
 console.log(`${config.botname}`,"is now online.")
 //Checks the status of the website and tells the console if the website is online
+const websiteStatus = config.websiteStatus
+
+if(websiteStatus === "on"){
+
 const http = require('http');
 const https = require('https');
 
@@ -36,5 +40,8 @@ function test(){
   })
 }
 
+}else{
+  return;
+}
 
 }
