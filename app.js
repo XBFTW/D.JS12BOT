@@ -24,7 +24,7 @@ client.on('guildMemberAdd', member => {
   member.roles.add(role);
 });
 
-//http
+//Starts the website
 const http = require('http')
 const fs = require('fs')
 const websiteLocation = (`./website/index.html`)
@@ -33,8 +33,13 @@ const server = http.createServer((req, res) => {
   res.writeHead(200, { 'content-type': 'text/html' })
   fs.createReadStream(websiteLocation).pipe(res)
 })
+try{
+  server.listen(process.env.PORT || 3000)
+}
+catch(err){
+  console.log(err);
+};
 
-server.listen(process.env.PORT || 3000)
 
 //Login Info that requires a enviornment variable (.env)
 client.login(process.env.BOT_TOKEN);
