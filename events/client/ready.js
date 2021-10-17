@@ -29,7 +29,7 @@ module.exports = () =>{
   }
 // you MUST set the PORT in the .env file!
   function test(){
-      checkWebsite(`http://localhost/:${process.env.PORT}`, function(check){
+      checkWebsite(`http://localhost:${process.env.PORT}`, function(check){
           
       if(check){
       //console.log(check); //true
