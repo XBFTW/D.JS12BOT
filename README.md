@@ -6,6 +6,10 @@ This bot was made by ```XBFTW#7381``` on Discord, if you have any questions or c
 
 You need to download [Node.js](https://nodejs.org/en/). Go into the file's location and go into cmd/terminal and do the command ```npm install```. This should update and install all required files from the ```package.json``` file. To start up the bot use the command ```npm app.js``` or ```node .```. If you need more help on the setup, contact XBFTW#7381 on Discord. 
 
+IMPORTANT!!: The discord bot automatically has a website on at localhost:80 but the website can be toggled in the ```config.json``` file. 
+
+Make sure to edit the ```.env``` and ```config.json``` files with your information and settings. 
+
 
 ## Usage
 Create a file called ```.env``` and type your bot token. Can be found [here](https://imgur.com/a/oaUFJSj), in the [Discord API](https://discordapi.com/).
