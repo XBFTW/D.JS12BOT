@@ -3,7 +3,7 @@ module.exports = {
     aliases: ['leave'], 
     cooldown: 0,
     description: "Join's the user's channel.",
-    async execute(client, message, cmd, args, Discord){
+    async execute(client, message, cmd, args, Discord, catchErr){
 
         const voice_channel = message.member.voice.channel;
         if (!voice_channel) return message.channel.send('You need to be in a channel to execute this command!');
@@ -11,6 +11,7 @@ module.exports = {
         if (!permissions.has('CONNECT')) return message.channel.send('You dont have the correct permissins');
         if (!permissions.has('SPEAK')) return message.channel.send('You dont have the correct permissins');
 
+    try{
         if(cmd === 'join'){
             const connection = await voice_channel.join();
             message.react('👌');
@@ -21,8 +22,8 @@ module.exports = {
 
         message.channel.send(joinEmbed)
 
-        }
-          
+        }        
+        
         else if(cmd === 'leave'){
             const connection = await voice_channel.leave();
             message.react('👋');
@@ -32,9 +33,13 @@ module.exports = {
         .setDescription('I left your voice channel!')
 
         message.channel.send(leaveEmbed)
-            
+
         }
 
+    }catch(err){
+        catchErr(err, message)
     }
+//dont copy past this
+}
 
 }
