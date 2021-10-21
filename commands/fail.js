@@ -3,7 +3,7 @@ module.exports = {
     description: "Causes the discord bot to crash",
     execute(client, message, cmd, args, Discord){
 
-//This is where I test my crash prevention
+//This command does not really have any real purpose, I just use it to test my crash prevention.
 
 function catchErr (err, message) {
 
@@ -17,7 +17,7 @@ function catchErr (err, message) {
 
   try{
 
-//Put code here
+//Normally code would go in this area, but for this command It purposely is not defined so it causes a crash. 
 thisIsntDefined
 
   }
