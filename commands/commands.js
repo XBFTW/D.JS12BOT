@@ -1,18 +1,8 @@
 module.exports = {
     name: 'commands',
     description: "Respondes with a list of commands",
-    execute(client, message, cmd, args, Discord){
-
-      function catchErr (err, message) {
-
-        require('dotenv').config();
-
-        client.users.cache.get(`${process.env.OWNER}`).send('The bot crashed, the crash report: ```' + err + '```')
-        console.log("The bot has just prevented a crash, the report has been sent to XBFTW")
-        message.channel.send('The bot just prevented a crash, the report has been sent to XBFTW');
-
-    }
-          
+    execute(client, message, cmd, args, Discord, catchErr){
+             
       try{
        
         const fs = require('fs');
