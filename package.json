@@ -1,13 +1,8 @@
 {
   "name": "xbftw-bot",
   "version": "1.0.0",
-  "description": "Bot made my XBFTW",
+  "description": "Bot made by XBFTW",
   "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "XBFTW",
-  "license": "ISC",
   "dependencies": {
     "@discordjs/opus": "^0.5.3",
     "discord.js": "^12.5.3",
@@ -19,5 +14,17 @@
     "ytdl-core": "^4.9.0"
   },
   "devDependencies": {},
-  "keywords": []
+  "scripts": {
+    "test": "node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/XBFTW/XBFTW-BOT.git"
+  },
+  "author": "XBFTW",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/XBFTW/XBFTW-BOT/issues"
+  },
+  "homepage": "https://github.com/XBFTW/XBFTW-BOT#readme"
 }
