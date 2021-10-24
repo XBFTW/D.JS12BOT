@@ -11,7 +11,6 @@ module.exports = (Discord, client, message) => {
     const command = client.commands.get(cmd) || client.commands.find(a => a.aliases && a.aliases.includes(cmd));
     //Error catching
     function catchErr (err, message) {
-        require('dotenv').config();
         client.users.cache.get(`${process.env.OWNER}`).send('The bot crashed, the crash report: ```' + err + '```')
         console.log("The bot has just prevented a crash, the report has been sent to XBFTW")
         message.channel.send('The bot just prevented a crash, the report has been sent to XBFTW');
