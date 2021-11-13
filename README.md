@@ -9,5 +9,5 @@ I wouldn't recommend it. Self-hosting this bot (running a copy yourself) is not 
 ## Usage
 This Discord bot uses the [Discord Api](https://discordapi.com) and [NodeJS](https://nodejs.org). 
 
-### Work
+## Work
 This bot is for the [XBFTW SERVER](https://discord.gg/2kn45fF6VK), you can also find find my socials by clicking [this](https://xbftw.com).
