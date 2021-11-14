@@ -4,7 +4,7 @@ This bot was made by ```XBFTW#7381``` on Discord, if you have any questions or c
 
 ## Can I host this bot myself?
 
-I wouldn't recommend it. Self-hosting this bot (running a copy yourself) is not supported, and no help will be provided for editing nor compiling the code in this repository. The source code is provided here for transparency about how the bot's primary features work. If you decide to edit, compile, or use this code in any way, please respect the [license](https://github.com/XBFTW/XBFTW-BOT/blob/main/LICENSE).
+I wouldn't recommend it. Self-hosting this bot (running a copy yourself) is not supported, and no help will be provided for editing nor compiling the code in this repository. This bot was specifically designed for the XBFTW Discord server, so some features may not work with your Discord Server.  The source code is provided here for transparency about how the bot's primary features work. If you decide to edit, compile, or use this code in any way, please respect the [license](https://github.com/XBFTW/XBFTW-BOT/blob/main/LICENSE).
 
 ## Usage
 This Discord bot uses the [Discord Api](https://discordapi.com) and [NodeJS](https://nodejs.org). 
