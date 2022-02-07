@@ -11,3 +11,7 @@ This Discord bot uses the [Discord Api](https://discordapi.com) and [NodeJS](htt
 
 ## Work
 This bot is for the [XBFTW SERVER](https://discord.gg/2kn45fF6VK), you can also find find my socials by clicking [this](https://xbftw.com).
+
+## NOTE
+
+This bot has not been updated to Discordv13, I cannot gurantee if all features in this bot works. An updated version of this bot will come out in the near future, it will be in another repository.
